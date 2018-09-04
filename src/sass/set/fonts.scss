@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'PT Astra Sans Bold Italic';
+    src: url('../fonts/pta/PTAstraSans-BoldItalic.eot');
+    src: url('../fonts/pta/PTAstraSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/pta/PTAstraSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/pta/PTAstraSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Astra Sans';
+    src: url('../fonts/PTAstraSans-Regular.eot');
+    src: url('../fonts/PTAstraSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTAstraSans-Regular.woff2') format('woff2'),
+        url('../fonts/PTAstraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Astra Sans Italic';
+    src: url('./fonts/PTAstraSans-Italic.eot');
+    src: url('./fonts/PTAstraSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/PTAstraSans-Italic.woff2') format('woff2'),
+        url('./fonts/PTAstraSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Astra Sans Bold';
+    src: url('../fonts/PTAstraSans-Bold.eot');
+    src: url('../fonts/PTAstraSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PTAstraSans-Bold.woff2') format('woff2'),
+        url('../fonts/PTAstraSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Exo 2 bold';
+    src: url('../fonts/Exo2-Black.eot');
+    src: url('../fonts/Exo2-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Exo2-Black.woff2') format('woff2'),
+        url('../fonts/Exo2-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+

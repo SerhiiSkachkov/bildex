@@ -1,0 +1,99 @@
+.work 
+  padding-top: 67px 
+.work-box 
+  padding-top: 28px 
+.work-item 
+  padding: 0
+  border: 2px solid transparent
+  position: relative
+  margin-bottom: 80px
+  height: 413px
+  position: relative
+  background-color: white 
+.work-item:hover 
+  -webkit-box-shadow: -1px 5px 35px 0px rgba(244, 125, 66, 0.6)
+          box-shadow: -1px 5px 35px 0px rgba(244, 125, 66, 0.6)
+  border: 2px solid #f47d42
+  z-index: 99 
+.work-item:hover .cls-1, .work-item:hover .cls-2, .work-item:hover .cls-3 
+  stroke: #f47d42
+  -webkit-transition: 0.3s
+  transition: 0.3s 
+.work-item:hover .btn span 
+  color: #f47d42
+  -webkit-transition: 0.3s
+  transition: 0.3s 
+.work-item:before 
+  content: ''
+  position: absolute
+  top: -10px
+  left: -4px
+  display: block
+  border-left: 1px solid #cecece
+  height: 107%
+  z-index: 1
+  height: 439px 
+.work-item:after 
+  content: ''
+  position: absolute
+  top: -15px
+  right: -1px
+  display: block
+  height: 107%
+  z-index: 1
+  border-right: 1px solid #cecece 
+.work-item:nth-of-type(2):before 
+  bottom: -100px 
+.work-item:nth-of-type(2), .work-item:nth-of-type(4) 
+  margin-top: 80px 
+.work-item:nth-of-type(2):before, .work-item:nth-of-type(4):before 
+  top: -100px
+  height: 130% 
+.work-item-box 
+  padding: 41px 30px 30px 40px 
+.work-item-box:before 
+  content: ''
+  position: absolute
+  top: -3px
+  left: -20px
+  display: block
+  width: 110%
+  border-top: 1px solid #cecece 
+.work-item-box:after 
+  content: ''
+  position: absolute
+  bottom: -3px
+  left: -11px
+  display: block
+  width: 108%
+  border-top: 1px solid #cecece 
+.work-item-title 
+  margin: 83px 0px 21px 0px
+  font: 24px/27px 'PT Astra Sans bold' 
+.work-item-txt 
+  margin-bottom: 23px 
+
+@media (max-width: 991px) 
+  .work-item:nth-of-type(3) 
+    margin-top: -159px 
+  .work-item:nth-of-type(4) 
+    margin-top: -79px
+    margin-bottom: 0px  
+
+@media (max-width: 767px) 
+  .work-item 
+    margin: 0px 0px !important 
+  .work-item:before 
+    height: 101%
+    top: -15px !important 
+  .work-item:nth-of-type(2):before, .work-item:nth-of-type(4):before 
+    height: 108% 
+  .work-item-box:before, .work-item-box:after 
+    left: -3%
+    width: 106% 
+  .work-item-box:before 
+    top: -2px  
+
+@media (max-width: 575px) 
+  .work-item 
+    margin: 0px 10px !important  

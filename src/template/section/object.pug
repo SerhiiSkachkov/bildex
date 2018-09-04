@@ -1,0 +1,66 @@
+section.object
+  .container
+    .row.object-box
+      h2.title.title-white.col-12 Заполните форму
+      .object-title-after.col-12 для бесплатного замера объекта и просчета сметы
+      .col-lg-7.col-lg-auto.object-form
+        form.form.js-form-template
+          .form-box.clearfix
+            .form-row.clearfix
+              label.form-field.form-field-lbl(
+                for='name') Имя
+              input#name.form-field.form-field-inp.js-valid(
+                type='text'
+                name='name[]'
+              )
+              span.error-txt Заполните поле
+            .form-row.clearfix
+              label.form-field.form-field-lbl(
+                for='mail') E-mail
+              input#mail.form-field.form-field-inp.js-valid(
+                type='email'
+                name='email[]'
+              )
+              span.error-txt Заполните поле
+            .form-row.clearfix
+              label.form-field.form-field-lbl(
+                for='numb') Телефон
+              input#numb.form-field.form-field-inp.js-valid(
+                type='tel'
+                name='tel[]'
+                )
+              span.error-txt Заполните поле
+            .form-row.clearfix
+              label.form-field.form-field-file(
+                for='file') 
+                .form-field-file-txt Прикрепите пректную документацию
+                .form-field-file-up
+                  span.icon-paper-clip
+                  .form-field-file-btn Выбрать фаил
+                input#file.form-field.form-field-file(
+                  type='file'
+                  name='file'
+                  value="Выберите файл"
+                )
+                
+            .form-row.clearfix
+              label.form-field.form-field-lbl(
+                for='post') Ваша должность
+              input#post.form-field.form-field-inp.js-valid(
+                type='text'
+                name='position[]'
+              )
+              span.error-txt Заполните поле
+            .form-row.clearfix
+              label.form-field.form-field-lbl(
+                for='company') Название компании
+              input#company.form-field.form-field-inp.js-valid(
+                type='text'
+                name='company[]'
+              )
+              span.error-txt Заполните поле
+          input.form-btn(
+            type='submit'
+            value="Отправить"
+          )
+          

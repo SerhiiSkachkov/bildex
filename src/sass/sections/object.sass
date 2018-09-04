@@ -1,0 +1,123 @@
+.object-box 
+  background: url(../img/form.jpg) center top no-repeat/cover
+  padding-top: 38px
+  padding-bottom: 55px
+
+.object-box h2 
+  text-align: center 
+
+.object-title-after 
+  font-size: 12px
+  color: white
+  text-align: center
+  margin-bottom: 24px 
+
+.object-form 
+  margin: 0 auto 
+
+.form 
+  margin: 10px
+  padding: 40px 60px 68px 60px
+  background-color: white 
+
+.form-row-file 
+  overflow: hidden
+
+.form-field 
+  width: 60%
+  display: block
+  float: left
+  border: none
+  border-bottom: 1px solid #9197a1
+  padding: 15px 0px
+
+.form-field-lbl 
+  width: 39% 
+
+.form-field-inp:focus 
+  border-bottom: 1px solid #014db7
+
+.form-field-file 
+  padding-top: 37px
+  border: none
+  width: 100% 
+
+.form-field-file-txt 
+  width: 40%
+  float: left
+
+.form-field-file-up 
+  width: 59%
+  float: right
+
+.form-field-file-btn 
+  display: inline-block
+  border-bottom: 1px solid gray 
+
+.form-field-file-btn:hover 
+  color: #f47d42
+  border-bottom: 1px solid #f47d42
+  cursor: pointer
+
+.form-field-file .icon-paper-clip 
+  color: gray
+  font-size: 20px 
+
+.form-btn 
+  display: block
+  width: 158px
+  height: 50px
+  padding: 10px 0px
+  margin: 51px auto 10px
+  background-color: transparent
+  border: 2px solid #014db7
+  color: #014db7
+  -webkit-box-shadow: 1px 6px 23px -7px #014db7
+          box-shadow: 1px 6px 23px -7px #014db7
+
+.form-btn:hover 
+  cursor: pointer
+  color: #f47d42
+  border: 2px solid #f47d42
+  -webkit-transition: 0.3s
+  transition: 0.3s
+  -webkit-box-shadow: 1px 6px 23px -7px #f47d42
+          box-shadow: 1px 6px 23px -7px #f47d42 
+
+.errorInput 
+  border-bottom: 1px solid #f47d42 
+
+.errorInput span 
+    display: block 
+
+input[type="file"] 
+  display: none 
+
+@media (max-width: 767px)
+  .form
+    margin: 0
+    padding: 15px
+    &-field
+      width: 100%
+      padding: 0
+      &-file
+        height: auto
+        padding: 10px 0px
+        border-bottom: 1px solid $gray
+        &-txt
+          width: 100%
+          margin-bottom: 5px
+        &-up
+          width: 100%
+      &-lbl
+        border-bottom: none
+        padding-top: 30px 
+.error
+  &-txt
+    color: $main-color
+    display: none
+    float: right
+    margin-right: 20px
+    margin-top: 10px
+  &-show
+    display: block

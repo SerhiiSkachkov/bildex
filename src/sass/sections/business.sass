@@ -1,0 +1,91 @@
+.business 
+  color: white
+  padding-top: 98px
+  min-height: 587px
+  background: url(../img/three.jpg) center top no-repeat/cover 
+
+.business-box 
+  padding-top: 63px
+  border-right: 1.5px solid rgba(187, 187, 173, 0.219608)
+  border-bottom: 1.5px solid rgba(187, 187, 173, 0.219608)
+  position: relative
+
+.business-box:before 
+  content: ''
+  display: block
+  height: 70%
+  width: 2px
+  position: absolute
+  bottom: 0px
+  left: 0px
+  border-left: 1.5px solid rgba(187, 187, 173, 0.219608)
+
+.business h2 
+  margin-bottom: -20px
+  position: relative 
+
+.business h2:before 
+  content: ''
+  display: block
+  width: 77%
+  height: 2px
+  position: absolute
+  top: 50%
+  right: 0px
+  border-bottom: 1.5px solid rgba(187, 187, 173, 0.219608)
+
+.business-item 
+  padding-left: 33px 
+
+.business-item:nth-of-type(1) 
+  padding-left: 0 
+
+.business-item:nth-of-type(4) 
+  padding-left: 61px 
+
+.business-item-title 
+  position: relative
+  font: 93px 'Exo 2 bold'
+
+.business-item-title:before 
+  content: ''
+  display: block
+  width: 30px
+  height: 30px
+  position: absolute
+  bottom: 5px
+  left: -43px
+  background: url(../img/arr.svg) center top no-repeat/contain 
+
+.business-item-context 
+  height: 70px
+  width: 100px
+  line-height: 23px
+  margin-bottom: 19px 
+  
+.business-item-context-wrap 
+  display: block 
+
+@media (max-width: 991px) 
+  .business-box 
+    padding-bottom: 143px 
+  .business-item 
+    margin-bottom: 36px
+    padding-left: 108px 
+  .business-item:nth-of-type(even) 
+    padding-left: 108px 
+  .business-item:nth-of-type(odd) 
+    padding-left: 94px 
+  .business-item:nth-of-type(1) .business-item-context, .business-item:nth-of-type(2) .business-item-context 
+    height: auto 
+  .business-item-context 
+    width: 75% 
+  .business-item-context-wrap 
+    display: inline-block  
+
+@media (max-width: 575px) 
+  .business-item 
+    padding: 0px 10px 0px 50px !important
+    margin-bottom: 0 
+  .business-item-context 
+    height: auto !important  

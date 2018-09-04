@@ -1,0 +1,227 @@
+.header
+   position: absolute
+   top: 0
+   right: 0
+   left: 0
+   color: #fff
+   &-top
+      padding: 17px 0px 13px
+      width: 100%
+      border-bottom: 2px solid rgba(187, 187, 173, 0.2196078431372549)
+   &-bot
+      padding: 15px 0px 15px
+      width: 100%     
+.social
+   li
+      display: inline-block
+      a 
+         color: white
+         margin-right: 17px
+         &:hover
+            transition: 0.3s
+            color: $main-color
+//fixed menu
+.hide-top
+   display: none!important
+.fixed-style
+   z-index: 500
+   transition: 0.4s
+   background-color: white
+   color: black
+   border-bottom: 1.5px solid gray
+   &-nav
+      .nav-list-link
+         color: black
+   &-logo-txt
+      li
+         color: $main-color
+
+.select
+   padding: 0
+   display: flex  
+   justify-content: flex-end   
+   &-call
+      color:#fff
+      margin: 0px 22px 0px 55px
+      font: 14px 'PT Astra Sans Bold'
+      &:hover
+         color: rgba(187, 187, 173, 0.2196078431372549)
+         transition: 0.3s 
+   &-work-time
+      opacity: 0.7
+      font-size: 12px
+   &-lang
+      float: right
+      margin-right: 5px
+      margin-left: 44px
+      li 
+         display: inline-block
+         margin: 0px 3px
+         a
+            opacity: 0.4
+            &:hover
+               opacity: 1
+               transition: 0.3s 
+         a.active-lang
+               opacity: 1
+
+.logo
+   display: inline-block
+   position: relative
+   color: #fff
+   &-txt
+      margin-left: 5px
+      vertical-align: top
+      display: inline-block
+      li
+         text-transform: uppercase
+         font: 700 9px 'PT Sans'
+      &-col
+         color: $main-color-two
+   &:hover
+      opacity: 0.7
+      transition: 0.6s          
+//navigation 
+.nav
+   float: right
+   &-list
+      &-li
+        float: left
+        margin: 0px 25px
+        &:last-child
+            margin-right: 6px
+      &-link
+         letter-spacing: 1.1px
+         text-transform: uppercase
+         font: 400 13px 'PT Sans'
+         color: #fff
+         padding-bottom: 30px
+         border-bottom: 1px solid transparent 
+         &:hover
+             border-bottom: 1px solid white
+             transition: 0.3s
+   &-drop
+         position: relative
+         &-list 
+            display: none
+            border-top: 1.5px solid gray
+            min-width: 225px
+            padding: 10px 0px
+            position: absolute
+            background-color: black
+            top: 49px;
+            z-index: 9999
+            li 
+               a 
+                  text-transform: uppercase
+                  display: block
+                  color: white
+                  padding: 10px 20px 10px 20px
+                  &:hover
+                     background-color: gray
+         &-active
+            display: block!important
+            
+            
+.icon-arrow-down:before
+   font-size: 10px!important
+   margin: 6px
+   font-weight: bold
+.hamburger
+   display: none
+   padding-top: 0
+   padding-right: 0
+   &-inner
+      background: white
+      &:before,
+      &:after
+       background: white
+   &-fixed
+      background: black
+      &:before,
+      &:after
+         background: black
+
+@media (min-width: 991px)
+     .nav-drop
+         &:hover
+            .nav-drop-list
+               display: block
+   
+@media (max-width: 991px)
+   .hamburger
+      display: block
+   .header-bot
+      position: relative
+      z-index 9999999
+   .logo
+      z-index: 9999999999
+      position: relative
+   .nav
+      padding-top: 150px
+      position: fixed
+      width: 80%
+      top: 0
+      left: 0
+      height: 100vh
+      z-index: 10000
+      display: none
+      background: black
+      &-list
+         &-li
+            float: none
+            
+            display: block
+            width: 225px;
+         &-link
+            padding-bottom: 0
+      &-active
+         display: block
+         left: 0px
+         transition: 0.3s
+      &-drop
+         &-list 
+            border-top: none
+            position: static
+            width: 60%
+            li 
+               a 
+                  color: white
+                  padding: 5px 0px
+                  font-size: 12px
+
+
+   .fixed-style-nav
+      padding-top: 93px 
+      .nav
+         &-list
+            padding: 20px 20px
+            &-link
+               color: white
+            &-li
+               margin: 0
+         &-drop-list
+            display: none
+            border-top: none
+            li
+               a  
+                  color: white
+                  padding: 5px 0px
+                  font-size: 12px
+   .select
+      &-lang
+         display: none
+      &-call
+         margin-left: 40px
+
+@media (max-width: 576px)
+   .header
+      &-top
+         display: none!important
+      &-bot
+         padding: 17px 15px 10px
+   .logo
+      img
+         width: 166px
+      &-txt li 
+            font-size: 6px                              

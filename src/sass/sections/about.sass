@@ -1,0 +1,124 @@
+
+.about 
+  padding: 100px 0px 80px 0px
+  min-height: 622px 
+
+.about h2 
+  margin-bottom: 40px 
+
+.about-item 
+  position: relative 
+
+.about-item:before, .about-item:after 
+  content: ''
+  display: none
+  width: 20px
+  height: 20px
+  position: absolute 
+
+.about-item:before 
+  border-right: 3px solid #f47d42
+  border-bottom: 3px solid #f47d42
+  bottom: 0
+  right: 0 
+
+.about-item:after 
+  border-top: 3px solid #f47d42
+  border-right: 3px solid #f47d42
+  top: 0
+  right: 0 
+
+.about-item-box 
+  padding: 35px 23px 
+
+.about-item-box:before, .about-item-box:after 
+  content: ''
+  display: none
+  width: 20px
+  height: 20px
+  position: absolute 
+
+.about-item-box:before 
+  border-left: 3px solid #f47d42
+  border-bottom: 3px solid #f47d42
+  bottom: 0
+  left: 0 
+
+.about-item-box:after 
+  border-top: 3px solid #f47d42
+  border-left: 3px solid #f47d42
+  top: 0
+  left: 0 
+
+.about-item-img 
+  height: 60px
+  margin-bottom: 24px 
+
+.about-item-title 
+  height: 92px
+  position: relative
+  text-transform: uppercase
+  font: 18px/27px 'PT Astra Sans Bold' 
+
+.about-item-title:before 
+  content: ''
+  -webkit-transition: 0.3s
+  transition: 0.3s
+  display: block
+  height: 4px
+  width: 30px
+  position: absolute
+  top: 10px
+  left: -35px
+  background: #014db7 
+
+.about-item-context 
+  height: 80px
+  font: 14px/21px 'PT Astra Sans'
+  margin-bottom: 8px 
+
+.about-item:hover 
+  -webkit-transition: 0.3s
+  transition: 0.3s 
+
+.about-item:hover:before, .about-item:hover:after 
+  display: block
+  -webkit-transition: 0.3s
+  transition: 0.3s 
+
+.about-item:hover .about-item-box:before, .about-item:hover .about-item-box:after 
+  display: block 
+
+.about-item:hover .about-item-title:before 
+  display: none
+  -webkit-transition: 0.3s
+  transition: 0.3s 
+
+.about-item:hover .cls-1 
+  stroke: #f47d42
+  -webkit-transition: 0.3s
+  transition: 0.3s 
+
+.about-item:hover .btn span 
+  color: #f47d42
+  -webkit-transition: 0.3s
+  transition: 0.3s 
+
+.cls-2 
+  stroke: #9197a1
+  stroke-width: 1px
+  fill-rule: evenodd
+  fill: #fff 
+
+.cls-1 
+  stroke: #9197a1
+  stroke-linecap: round
+  stroke-linejoin: round
+  stroke-width: 1px
+  fill: none
+  fill-rule: evenodd 
+
+@media (max-width: 991px) 
+  
+  .about-item-title span 
+    display: none  
